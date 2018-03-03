@@ -1,0 +1,10 @@
+/home/joserarodrigues/Projects/DotNetCore/API-Test/bin/Debug/netcoreapp2.0/API-Test.deps.json
+/home/joserarodrigues/Projects/DotNetCore/API-Test/bin/Debug/netcoreapp2.0/API-Test.runtimeconfig.json
+/home/joserarodrigues/Projects/DotNetCore/API-Test/bin/Debug/netcoreapp2.0/API-Test.runtimeconfig.dev.json
+/home/joserarodrigues/Projects/DotNetCore/API-Test/bin/Debug/netcoreapp2.0/API-Test.dll
+/home/joserarodrigues/Projects/DotNetCore/API-Test/bin/Debug/netcoreapp2.0/API-Test.pdb
+/home/joserarodrigues/Projects/DotNetCore/API-Test/obj/Debug/netcoreapp2.0/API-Test.csproj.CoreCompileInputs.cache
+/home/joserarodrigues/Projects/DotNetCore/API-Test/obj/Debug/netcoreapp2.0/API-Test.AssemblyInfoInputs.cache
+/home/joserarodrigues/Projects/DotNetCore/API-Test/obj/Debug/netcoreapp2.0/API-Test.AssemblyInfo.cs
+/home/joserarodrigues/Projects/DotNetCore/API-Test/obj/Debug/netcoreapp2.0/API-Test.dll
+/home/joserarodrigues/Projects/DotNetCore/API-Test/obj/Debug/netcoreapp2.0/API-Test.pdb
