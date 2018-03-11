@@ -6,23 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API_Test.Controllers
 {
-    [Route("api/values")]
-    public class ValuesController : Controller
+    [Route("api/players")]
+    public class PlayerController : Controller
     {
-        private PlayersRepository _repository = PlayersRepository.Instance;
+        private PlayerRepository _repository = PlayerRepository.Instance;
 
-        // GET api/values
+        // GET api/players
         [HttpGet]
-        public IEnumerable<PlayerDTO> Get()
+        public IActionResult Get()
         {
-            return _repository.Players;
+            return Ok(_repository.Players);
         }
 
-        // GET api/values/5
+        // GET api/players/5
         [HttpGet("{id}")]
-        public PlayerDTO Get(int id)
+        public IActionResult Get(int id)
         {
-            return _repository.GetPlayer(id);
+            var player = _repository.GetPlayer(id);
+            if (player == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(player);
         }
 
         // POST api/values
