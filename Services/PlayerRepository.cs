@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using API_Test.Models.Media;
+using API_Test.Models.Player;
 
 public class PlayerRepository
 {
@@ -13,7 +15,7 @@ public class PlayerRepository
             {
                 ID = 1,
                 Name = "One",
-                MediaCollection = new [] {
+                MediaCollection = new List<MediaDTO> {
                     new MediaDTO
                     {
                         ID = 1,
@@ -30,7 +32,7 @@ public class PlayerRepository
             {
                 ID = 2,
                 Name = "Two",
-                MediaCollection = new [] {
+                MediaCollection = new List<MediaDTO> {
                     new MediaDTO
                     {
                         ID = 1,
