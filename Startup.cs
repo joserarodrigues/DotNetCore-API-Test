@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using NLog.Extensions.Logging;
 
 namespace API_Test
 {
@@ -28,12 +29,13 @@ namespace API_Test
             services.AddMvc()
             .AddMvcOptions(o => o.OutputFormatters.Add(
                 new XmlDataContractSerializerOutputFormatter()
-            ))
-            ;
+            ));
+
+            services.AddTransient<IMailService, LocalMailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {

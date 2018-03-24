@@ -34,6 +34,9 @@
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
+            },
+            "logging": {
+                "moduleLoad": false
             }
         },
         {
